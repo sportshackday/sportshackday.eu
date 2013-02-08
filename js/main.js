@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 function getTweets() {
   $(".tweets").miniTwitter({
-    query: "#sportshackday OR @sportshackday OR sportshackday.com",
+    query: "#sportshackday OR @SportsHackDayEU OR sportshackday.eu",
     limit: 8
   });
 }

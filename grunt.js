@@ -7,7 +7,7 @@ module.exports = function(grunt) {
       version: '0.1.0',
       banner: '/*! Sports Hack Day - v<%= meta.version %> - ' +
         '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-        '* http://sportshackday.com/\n' +
+        '* http://sportshackday.eu/\n' +
         '* Copyright (c) <%= grunt.template.today("yyyy") %> ' +
         'Sports Hack Day; Licensed MIT */'
     },
