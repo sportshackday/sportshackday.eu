@@ -1,0 +1,48 @@
+body {
+  background: $grey;
+  color: $white;
+
+  font-size: 18px;
+  font-family: source-sans-pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2 {
+  font-family: freight-sans-pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 36px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $white;
+  font-weight: 700;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+i, em {
+  font-style: italic;
+}
+
+::-moz-selection {
+    background: #000;
+    text-shadow: none;
+}
+
+::selection {
+    background: #000;
+    text-shadow: none;
+}

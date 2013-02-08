@@ -1,0 +1,359 @@
+.date {
+  margin-bottom: 16px;
+  font-family: octin-sports, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  i {
+    display: none;
+  }
+
+  b {
+    display: inline;
+  }
+}
+
+.heading {
+  margin-bottom: 18px;
+  padding: 0 10px;
+
+  background-color: $red;
+  background-image: url('../img/border-left.png'),
+                    url('../img/border-right.png');
+  background-position: top left, top right;
+  background-repeat: no-repeat;
+
+  color: $grey;
+}
+
+.accent {
+  background: $black;
+  color: $header-text;
+}
+
+.sponsors {
+  margin: 8px 0 4px;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 12px;
+  }
+
+  img {
+    width: 150px;
+    position: relative;
+    display: block;
+  }
+}
+
+.small-sponsors {
+  padding: 0;
+  margin: 36px 0 -18px -36px;
+
+  list-style: none;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin-left: 36px;
+    margin-bottom: 18px;
+    width: 150px;
+  }
+
+  img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+  }
+
+  a {
+    display: block;
+    padding: 10px 16px;
+    height: 66px;
+    width: 118px;
+
+    background: #FFF;
+  }
+}
+
+.details {
+  margin-top: 72px;
+
+  font-size: 13px;
+  text-align: center;
+}
+
+.map {
+  height: 400px;
+  margin: 36px 0;
+}
+
+.judges {
+  padding: 0;
+  margin-bottom: 36px;
+
+  list-style: none;
+
+  li {
+    margin-bottom: 27px;
+  }
+}
+
+.judges-img {
+  width: 80px;
+  padding: 10px;
+  display: block;
+  float: left;
+  margin-right: 20px;
+
+  background: $white;
+}
+
+.judges-name {
+  margin: 7px 0 6px;
+
+  font-size: 18px;
+  font-family: octin-sports, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.judges-bio {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.superbowl {
+  font-family: octin-sports, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  b {
+    display: block;
+
+    font-weight: normal;
+  }
+}
+
+.content {
+  padding: 0 16px;
+}
+
+.cta {
+  margin: 1.5em 0 1.5em -3.5%;
+
+  text-align: center;
+
+  a {
+    display: inline-block;
+    margin-left: 3.5%;
+  }
+}
+
+.btn {
+  padding: 8px 12px;
+
+  background: $red;
+
+  color: $grey;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    background: $white;
+    color: $grey;
+  }
+}
+
+.twitter {
+  height: 23px;
+  width: 30px;
+  position: relative;
+  top: 4px;
+  display: inline-block;
+
+  background-image: url('../img/twitter.png');
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-position: 0 -27px;
+  } 
+}
+
+.tweets {
+  padding: 0 16px;
+  margin-bottom: 1.5em;
+
+  font-size: 14px;
+  line-height: 1.4;
+
+  a {
+    text-decoration: none;
+    color: #d1d2d4 !important;
+
+    &:hover {
+      color: $red !important;
+    }
+  }
+}
+
+.tweet {
+  border-top: 1px solid #666;
+  padding: 12px 0;
+
+  &:first-child {
+    border-top: none;
+  }
+}
+
+.time {
+  float:right;
+  color:#999;
+  font-size:12px;
+}
+
+.mt_avatar {
+  float:left;
+  margin: 2px 0 0;
+
+  img {
+    border-radius:5px;
+    width: 48px;
+  }
+}
+
+.mt_header {
+  padding-bottom:4px;
+  padding-left:60px;
+
+  a {
+    font-weight:bold;
+    text-decoration:none;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.mt_screen_name {
+  font-size:12px;
+  color:#999;
+}
+
+.mt_text {
+  padding-left:60px;
+}
+
+.mt_footer {
+  color:#999;
+  font-size:12px;
+  padding-left:60px;
+
+  .image_r {
+    display:inline-block;
+    margin-bottom:-2px;
+    margin-right:4px;
+    background-position: -20px -290px;
+    width: 14px;
+    height: 13px;
+    background-color:#999;
+  }
+
+  a {
+    color: #999;
+  }
+}
+
+.organizers {
+  padding: 0;
+  margin: 1.5em 0 1.5em -1.5em;
+
+  font-family: octin-sports,Helvetica Neue,Helvetica,Arial,sans-serif;
+  list-style: none;
+  text-align: center;
+
+  li {
+    margin-bottom: 1.5em;
+    display: inline-block;
+    margin-left: 1.5em;
+    max-width: 42%;
+    vertical-align: top;
+  }
+
+  span {
+    display: block;
+  }
+
+  img {
+    @include box-sizing(border-box);
+    padding: 10px;
+    width: 100%;
+    max-width: 180px;
+
+    background: $white;
+  }
+}
+
+.lt-ie9 .organizers img {
+  width: 166px;
+}
+
+.winners {
+  margin-left: -7%;
+
+  list-style: none;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin: 27px 0 0 7%;
+    width: 93%;
+
+    vertical-align: top;
+
+    *display: inline;
+    zoom: 1;
+  }
+}
+
+.winner {
+  margin: 0;
+  padding: 8px 12px;
+
+  background: #fff;
+
+  border-radius: 5px;
+
+  color: $grey;
+  line-height: 1.2;
+}
+
+.winner a {
+  color: $grey;
+  text-decoration: none;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+.winner-info {
+  margin: 6px 0 0;
+
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+
+  small {
+    display: block;
+
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+  }
+}
