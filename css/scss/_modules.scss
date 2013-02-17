@@ -17,17 +17,12 @@
   margin-bottom: 18px;
   padding: 0 10px;
 
-  background-color: $red;
-  background-image: url('../img/border-left.png'),
-                    url('../img/border-right.png');
-  background-position: top left, top right;
-  background-repeat: no-repeat;
-
-  color: $grey;
+  background-color: $dark;
+  color: $bright;
 }
 
 .accent {
-  background: $black;
+  background: $background;
   color: $header-text;
 }
 
@@ -109,7 +104,7 @@
   float: left;
   margin-right: 20px;
 
-  background: $white;
+  background: $bright;
 }
 
 .judges-name {
@@ -126,7 +121,7 @@
   margin-bottom: 0;
 }
 
-.superbowl {
+.championsleague {
   font-family: octin-sports, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-style: normal;
   text-transform: uppercase;
@@ -151,21 +146,22 @@
   a {
     display: inline-block;
     margin-left: 3.5%;
+    color: $bright;
   }
 }
 
 .btn {
   padding: 8px 12px;
 
-  background: $red;
+  background: $highlight;
 
-  color: $grey;
+  color: $foreground;
   text-transform: uppercase;
   text-decoration: none;
 
   &:hover {
-    background: $white;
-    color: $grey;
+    background: $bright;
+    color: $foreground;
   }
 }
 
@@ -193,10 +189,10 @@
 
   a {
     text-decoration: none;
-    color: #d1d2d4 !important;
+    color: #8c8c8c !important;
 
     &:hover {
-      color: $red !important;
+      color: $highlight !important;
     }
   }
 }
@@ -295,7 +291,7 @@
     width: 100%;
     max-width: 180px;
 
-    background: $white;
+    background: $bright;
   }
 }
 
@@ -329,16 +325,16 @@
 
   border-radius: 5px;
 
-  color: $grey;
+  color: $foreground;
   line-height: 1.2;
 }
 
 .winner a {
-  color: $grey;
+  color: $foreground;
   text-decoration: none;
 
   &:hover {
-    color: $red;
+    color: $highlight;
   }
 }
 

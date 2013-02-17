@@ -3,7 +3,6 @@
 @import 'base';
 @import 'layout';
 @import 'modules';
-@import 'state';
 @import 'retina';
 @media only screen and (min-width: $breakpoint-1) {
   @import 'breakpoint-1';
