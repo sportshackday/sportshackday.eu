@@ -1,0 +1,16 @@
+{
+  "name": "SportsHackDay",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "grunt"
+  },
+  "dependencies": {
+    "http-proxy": "*",
+    "connect": "*",
+    "which": "*",
+    "buffers": "*",
+    "websocket": "*",
+    "open": "*"
+  }
+}
