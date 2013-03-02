@@ -1,8 +1,9 @@
 .date {
-  margin-bottom: 16px;
-  font-family: octin-sports, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
+  margin-bottom: 34px;
+  font-family: "museo-slab", Helvetica Neue, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: $dark-green;
 
   i {
     display: none;
@@ -17,13 +18,18 @@
   margin-bottom: 18px;
   padding: 0 10px;
 
-  background-color: $dark;
-  color: $bright;
+  background-color: $dark-green;
+  color: white;
 }
 
 .accent {
-  background: $background;
-  color: $header-text;
+  background: $bordeaux;
+  box-shadow: 
+        inset 0px 11px 8px -10px rgba(0,0,0,0.5),
+        inset 0px -11px 8px -10px rgba(0,0,0,0.5); 
+  color: $dark-bordeaux;
+  font-weight: 800;
+  min-height: 80px;
 }
 
 .sponsors {
@@ -76,6 +82,8 @@
 
 .details {
   margin-top: 72px;
+  font-weight: 300;
+  font-style: italic;
 
   font-size: 13px;
   text-align: center;
@@ -103,15 +111,13 @@
   display: block;
   float: left;
   margin-right: 20px;
-
-  background: $bright;
 }
 
 .judges-name {
   margin: 7px 0 6px;
 
   font-size: 18px;
-  font-family: octin-sports, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "museo-slab", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -121,48 +127,132 @@
   margin-bottom: 0;
 }
 
+footer {
+  background: $bordeaux;
+  box-shadow: 
+        inset 0px 11px 8px -10px rgba(0,0,0,0.5),
+        inset 0px -11px 8px -10px rgba(0,0,0,0.5); 
+  margin-top: 50px;
+}
+
 .championsleague {
-  font-family: octin-sports, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-style: normal;
+  color: $dark-bordeaux;
+  background: url('../img/cl_ball.png') no-repeat center top !important;
+  padding-top: 75px;
+  font-family: "museo-slab", Helvetica Neue, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
 
   b {
     display: block;
-
-    font-weight: normal;
+    font-weight: 800;
   }
-}
-
-.content {
-  padding: 0 16px;
 }
 
 .cta {
   margin: 1.5em 0 1.5em -3.5%;
 
   text-align: center;
-
-  a {
-    display: inline-block;
-    margin-left: 3.5%;
-    color: $bright;
-  }
 }
 
-.btn {
-  padding: 8px 12px;
+.l-single h2 {
+  padding: 0;
+}
 
-  background: $highlight;
-
-  color: $foreground;
+.btn, .l-single h2 {
+  font-family: "futura-pt", Helvetica Neue, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18px;
+  text-rendering: optimizeLegibility;
   text-decoration: none;
+  color: white;
+  background: $bordeaux;
+  line-height: 50px;
+}
+#htexternal {
+  margin-left: 50px;
+}
+.btn {
+  display: inline-block;
+  height: 75px;
+  line-height: 75px;
+  font-size: 22px;
+  padding-right: 40px;
+}
 
-  &:hover {
-    background: $bright;
-    color: $foreground;
-  }
+.btn, .l-right h2 {
+  background:
+    -webkit-linear-gradient(135deg, transparent 10px, $bordeaux 10px);
+  background:
+    -moz-linear-gradient(135deg, transparent 10px, $bordeaux 10px);
+  background:
+    -o-linear-gradient(135deg, transparent 10px, $bordeaux 10px);
+}
+
+.btn:before, .l-single h2:before {
+  content: '';
+  display: block;
+  float: left;
+  position: relative;
+  left: -20px;
+  top: 0px;
+  background: $bordeaux;
+  background:
+    -webkit-linear-gradient(315deg, transparent 10px, $bordeaux 10px);
+  background:
+    -moz-linear-gradient(315deg, transparent 10px, $bordeaux 10px);
+  background:
+    -o-linear-gradient(315deg, transparent 10px, $bordeaux 10px);
+  width: 20px;
+  height: 50px;
+  z-index: -1;
+}
+.btn:before {
+  height: 75px;
+}
+
+.btn:hover:before {
+  color: white;
+  background: $dark-bordeaux;
+  background:
+    -webkit-linear-gradient(315deg, transparent 10px, $dark-bordeaux 10px);
+  background:
+    -moz-linear-gradient(315deg, transparent 10px, $dark-bordeaux 10px);
+  background:
+    -o-linear-gradient(315deg, transparent 10px, $dark-bordeaux 10px);
+}
+
+.btn:hover {
+  color: white;
+  background: $dark-bordeaux;
+  background:
+    -webkit-linear-gradient(135deg, transparent 10px, $dark-bordeaux 10px);
+  background:
+    -moz-linear-gradient(135deg, transparent 10px, $dark-bordeaux 10px);
+  background:
+    -o-linear-gradient(135deg, transparent 10px, $dark-bordeaux 10px);
+}
+
+.l-left h2 {
+  margin-bottom: 0;
+}
+.l-left .content {
+  padding: 48px;
+  margin: 0;
+  margin-left: -20px;
+  background: $dark-bordeaux;
+  background:
+    -webkit-linear-gradient(135deg, transparent 10px, $dark-bordeaux 10px);
+  background:
+    -moz-linear-gradient(135deg, transparent 10px, $dark-bordeaux 10px);
+  background:
+    -o-linear-gradient(135deg, transparent 10px, $dark-bordeaux 10px);
+}
+
+.l-left .content p {
+  margin: 0;
+  padding: 0;
 }
 
 .twitter {
@@ -192,7 +282,7 @@
     color: #8c8c8c !important;
 
     &:hover {
-      color: $highlight !important;
+      color: $grey !important;
     }
   }
 }
@@ -212,64 +302,10 @@
   font-size:12px;
 }
 
-.mt_avatar {
-  float:left;
-  margin: 2px 0 0;
-
-  img {
-    border-radius:5px;
-    width: 48px;
-  }
-}
-
-.mt_header {
-  padding-bottom:4px;
-  padding-left:60px;
-
-  a {
-    font-weight:bold;
-    text-decoration:none;
-
-    &:hover {
-      font-weight: bold;
-    }
-  }
-}
-
-.mt_screen_name {
-  font-size:12px;
-  color:#999;
-}
-
-.mt_text {
-  padding-left:60px;
-}
-
-.mt_footer {
-  color:#999;
-  font-size:12px;
-  padding-left:60px;
-
-  .image_r {
-    display:inline-block;
-    margin-bottom:-2px;
-    margin-right:4px;
-    background-position: -20px -290px;
-    width: 14px;
-    height: 13px;
-    background-color:#999;
-  }
-
-  a {
-    color: #999;
-  }
-}
-
 .organizers {
   padding: 0;
-  margin: 1.5em 0 1.5em -1.5em;
 
-  font-family: octin-sports,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: "museo-slab",Helvetica Neue,Helvetica,Arial,sans-serif;
   list-style: none;
   text-align: center;
 
@@ -281,6 +317,10 @@
     vertical-align: top;
   }
 
+  a:hover {
+    color: white;
+  }
+
   span {
     display: block;
   }
@@ -290,8 +330,6 @@
     padding: 10px;
     width: 100%;
     max-width: 180px;
-
-    background: $bright;
   }
 }
 
@@ -324,17 +362,14 @@
   background: #fff;
 
   border-radius: 5px;
-
-  color: $foreground;
   line-height: 1.2;
 }
 
 .winner a {
-  color: $foreground;
   text-decoration: none;
 
   &:hover {
-    color: $highlight;
+    color: $grey;
   }
 }
 

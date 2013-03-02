@@ -1,16 +1,16 @@
 body {
-  background: $foreground;
-  color: $dark;
+  background: $light-green;
+  color: white;
 
-  font-size: 18px;
-  font-family: 'Droid Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-family: "open-sans", Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2 {
-  font-family: freight-sans-pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "futura-pt", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 30px;
   text-align: center;
   margin: 36px 0;
@@ -25,11 +25,12 @@ img {
 }
 
 a {
-  color: $dark;
+  color: $grey;
   font-weight: 700;
+  text-decoration: none;
 
   &:hover {
-    color: $highlight;
+    color: $dark-bordeaux;
   }
 }
 
@@ -48,5 +49,5 @@ i, em {
 }
 
 #logo {
-  margin-top: 0;
+  margin-top: 100px;
 }

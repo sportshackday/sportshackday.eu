@@ -5,7 +5,7 @@
   $.fn.miniTwitter = function( options ) {
 
     var o = $.extend({
-      username: ['webdevdesigner'],
+      username: ['sportshackday_eu'],
       list: null,
       favorite: false,
       query: null,
