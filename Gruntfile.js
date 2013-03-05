@@ -40,14 +40,14 @@ module.exports = function (grunt) {
         forcecompile: true
       }
     },
-    ngmin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: 'js/',
-          src: '*.js',
-          dest: 'js/compiled'
-        }]
+    uglify: {
+      options: {
+        mangle: false
+      },
+      sportshackday: {
+        files: {
+          'js/compiled/site.min.js': ['js/main.js']
+        }
       }
     },
     jshint: {
@@ -63,7 +63,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-ngmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-open');
   grunt.loadNpmTasks('grunt-contrib-livereload');
   grunt.renameTask('regarde', 'watch');
@@ -80,7 +80,7 @@ module.exports = function (grunt) {
     'jshint',
     'compass',
     'concat',
-    'ngmin'
+    'uglify'
   ]);
 
   grunt.registerTask('default', ['build']);
