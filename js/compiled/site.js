@@ -5,7 +5,7 @@
   $.fn.miniTwitter = function( options ) {
 
     var o = $.extend({
-      username: ['sportshackday_eu'],
+      username: ['webdevdesigner'],
       list: null,
       favorite: false,
       query: null,
@@ -203,40 +203,86 @@
   };
 
 })( jQuery, window, document );
-$(document).ready(function () {
-
-function getTweets() {
-  $(".tweets").miniTwitter({
-    query: "#sportshackday OR @SportsHackDayEU OR sportshackday.eu",
-    limit: 8
-  });
-}
-
-// populate tweets imperatively
-getTweets();
-
-// timer to update tweets every 10 seconds
-setInterval(function(){ getTweets(); }, 10000);
-});
-// Avoid `console` errors in browsers that lack a console.
+'use strict';
 if (!(window.console && console.log)) {
-    (function() {
-        var noop = function() {};
-        var methods = ['assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error', 'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log', 'markTimeline', 'profile', 'profileEnd', 'markTimeline', 'table', 'time', 'timeEnd', 'timeStamp', 'trace', 'warn'];
-        var length = methods.length;
-        var console = window.console = {};
-        while (length--) {
-            console[methods[length]] = noop;
-        }
-    }());
+  (function () {
+    var noop = function () {
+    };
+    var methods = [
+        'assert',
+        'clear',
+        'count',
+        'debug',
+        'dir',
+        'dirxml',
+        'error',
+        'exception',
+        'group',
+        'groupCollapsed',
+        'groupEnd',
+        'info',
+        'log',
+        'markTimeline',
+        'profile',
+        'profileEnd',
+        'markTimeline',
+        'table',
+        'time',
+        'timeEnd',
+        'timeStamp',
+        'trace',
+        'warn'
+      ];
+    var length = methods.length;
+    var console = window.console = {};
+    while (length--) {
+      console[methods[length]] = noop;
+    }
+  }());
 }
 
-// Typekit advanced embed code
+$(document).ready(function () {
+	function getTweets() {
+	  $('.tweets').miniTwitter({
+	    query: '#sportshackday OR #sportshackdayeu OR @sportshackdayeu OR sportshackday.eu',
+	    limit: 8
+	  });
+	}
 
-(function() {
-    var config = {
+	// populate tweets imperatively
+	getTweets();
+
+	// timer to update tweets every 10 seconds
+	setInterval(function () {
+		getTweets();
+	}, 10000);
+});
+(function () {
+  var config = {
       kitId: 'rhy1cwy',
       scriptTimeout: 3000
     };
-    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-})();
+  var h = document.getElementsByTagName('html')[0];
+  h.className += ' wf-loading';
+  var t = setTimeout(function () {
+      h.className = h.className.replace(/(\s|^)wf-loading(\s|$)/g, ' ');
+      h.className += ' wf-inactive';
+    }, config.scriptTimeout);
+  var tk = document.createElement('script'), d = false;
+  tk.src = '//use.typekit.net/' + config.kitId + '.js';
+  tk.type = 'text/javascript';
+  tk.async = 'true';
+  tk.onload = tk.onreadystatechange = function () {
+    var a = this.readyState;
+    if (d || a && a != 'complete' && a != 'loaded')
+      return;
+    d = true;
+    clearTimeout(t);
+    try {
+      Typekit.load(config);
+    } catch (b) {
+    }
+  };
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(tk, s);
+}());
