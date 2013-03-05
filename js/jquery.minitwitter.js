@@ -133,7 +133,7 @@
     function display(widget) {
       var i;
       fetch().done(function (res) {
-        tweets = $.map(res.results || res, function (obj, i) {
+        var tweets = $.map(res.results || res, function (obj, i) {
           return fetchTweetsData(obj);
         });
         if ($(widget).find('.tweet').length > 0) {
