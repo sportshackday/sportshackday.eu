@@ -46,7 +46,7 @@ module.exports = function (grunt) {
       },
       sportshackday: {
         files: {
-          'js/compiled/site.min.js': ['js/main.js']
+          'js/compiled/site.min.js': ['js/main.js', 'js/jquery.minitwitter.js', 'js/typekit.js']
         }
       }
     },
